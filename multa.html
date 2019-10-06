@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>No pagues esa multa!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>No pagues esa multa</h1>
+            </div>
+        </div>
+        <form action="/" id="formulario">
+            <div class="form-group">
+                <label for="nombre">Sobre el actor:</label>
+                <input type="text" class="form-control" placeholder="Nombre completo" id="nombre" required />
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="DNI" id="dni" required />
+            </div>
+            <div class="form-group">
+                <label for="departamento">Departamento</label>
+                <select class="form-control" id="departamento" required>
+                    <option value="Capital">Capital</option>
+                    <option value="General Alvear">General Alvear</option>
+                    <option value="Godoy Cruz">Godoy Cruz</option>
+                    <option value="Guaymallén">Guaymallén</option>
+                    <option value="Junín">Junín</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Las Heras">Las Heras</option>
+                    <option value="Lavalle">Lavalle</option>
+                    <option value="Luján de Cuyo">Luján de Cuyo</option>
+                    <option value="Maipú">Maipú</option>
+                    <option value="Malargüe">Malargüe</option>
+                    <option value="Rivadavia">Rivadavia</option>
+                    <option value="San Carlos">San Carlos</option>
+                    <option value="San Martín">San Martín</option>
+                    <option value="San Rafael">San Rafael</option>
+                    <option value="Santa Rosa">Santa Rosa</option>
+                    <option value="Tunuyán">Tunuyán</option>
+                    <option value="Tupungato">Tupungato</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Domicilio" id="domicilio" required>
+            </div>
+            <div class="form-group">
+                <label for="numinfraccion">Sobre el incidente:</label>
+                <input type="text" class="form-control" placeholder="Número de infracción" id="numinfraccion" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Lugar del incidente" id="lugarincidente" required>
+            </div>
+            <div class="form-group">
+              <label for="fechaincidente">Fecha del siniestro</label>
+                <input type="date" class="form-control" placeholder="Fecha del incidente" id="fechaincidente" required>
+            </div>
+            <div class="form-group">
+                <label for="marca">Sobre el vehículo: </label>
+                <input type="text" class="form-control" placeholder="Marca" id="marca" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Modelo" id="modelo" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Color" id="color" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Dominio" id="dominio" required>
+            </div>
+            <div class="form-group">
+                <textarea name="" id="descargo" cols="30" rows="10" class="form-control" placeholder="Comentarios"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pruebas">Archivos:</label>
+                <input type="file" class="form-control-file" accept="image/*" id="pruebas">
+            </div>
+            <div class="row">
+                <div class="col"><button type="submit" class="btn btn-primary btn-lg" id="enviar">Enviar</button></div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col">
+                <img id="pdfviewer">
+                </img>
+            </div>
+        </div>
+        <div id="documento">
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="pdfform.minipdf.dist.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
+    <script src="jspdf.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="html2pdf.min.js"></script>
+
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+</body>
+
+</html>
